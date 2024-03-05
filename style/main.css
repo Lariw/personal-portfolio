@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 7%);
+  height: calc(100vh- 50px);
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.aside {
+  width: 950px;
+  box-shadow: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  height: 150px;
+  background-color: hsl(240, 2%, 12%);
+  margin: 0 auto;
+}
