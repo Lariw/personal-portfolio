@@ -16,6 +16,7 @@ html {
 body {
   background-color: #121212;
   height: calc(100vh- 50px);
+  font-family: "Lato", sans-serif;
 }
 
 .main {
