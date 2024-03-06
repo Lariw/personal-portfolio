@@ -1,0 +1,87 @@
+.aside__info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.aside__avatar {
+  width: 150px;
+  height: 150px;
+  background-color: hsl(240, 1%, 17%);
+  border-radius: 14px;
+}
+
+.aside__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside__heading {
+  font-size: 25px;
+}
+
+.aside__position {
+  border-radius: 8px;
+  background-color: hsl(240, 1%, 17%);
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.aside__moreInfo {
+}
+
+.separator {
+  height: 1px;
+  width: 80%;
+  margin: 25px auto;
+  background-color: hsl(240, 1%, 23%);
+}
+
+.aside__contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aside__contactListItem {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aside__contactIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+  z-index: 1;
+}
+
+.aside__contactIcon::before {
+  content: "";
+  inset: 1px;
+  position: absolute;
+  background: hsl(240, 2%, 13%);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.aside__icon {
+  width: 20px;
+}

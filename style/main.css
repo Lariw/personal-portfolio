@@ -34,9 +34,9 @@ body {
 }
 
 .aside {
-  width: 300px;
+  width: 290px;
   box-shadow: 0 24px 80px #00000040;
-  height: 550px;
+  height: 750px;
   background-color: #1e1e1f;
   border: 1px solid var(--border);
   border-radius: 15px;
@@ -57,7 +57,7 @@ body {
 .main-content {
   width: 750px;
   box-shadow: 0 24px 80px #00000040;
-  height: 550px;
+  height: 750px;
   background-color: #1e1e1f;
   border: 1px solid var(--border);
   border-radius: 15px;
