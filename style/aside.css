@@ -8,8 +8,8 @@
 }
 
 .aside__avatar {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-color: hsl(240, 1%, 17%);
   border-radius: 14px;
 }
@@ -29,7 +29,7 @@
   border-radius: 8px;
   background-color: hsl(240, 1%, 17%);
   padding: 5px 15px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .aside__moreInfo {
@@ -46,13 +46,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  color: hsla(0, 0%, 84%, 0.7);
 }
 
 .aside__contactListItem {
-  min-width: 100%;
+  margin: 20px 30px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
 }
 
@@ -83,5 +83,51 @@
 }
 
 .aside__icon {
+  width: 25px;
+}
+
+.aside__contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.aside__contactTitle {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.aside__contactContent {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+  font-size: 13px;
+}
+
+.aside__socialIconsList {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.aside__socialIconsItem {
+}
+
+.aside__socialLink {
+  text-decoration: none;
+  color: #fff;
+  color: #2b2b2c;
+}
+
+.aside__socialIcon {
   width: 25px;
 }
