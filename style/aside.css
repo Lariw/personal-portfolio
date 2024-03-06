@@ -5,6 +5,17 @@
   align-items: center;
   flex-direction: column;
   color: #fff;
+  position: relative;
+}
+
+@media only screen and (max-width: 1100px) {
+  .aside__info {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 80px;
+    gap: 25px;
+  }
 }
 
 .aside__avatar {
@@ -32,8 +43,45 @@
   font-size: 11px;
 }
 
-.aside__moreInfo {
+.aside__moreInfoBtn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  border-radius: 0 14px 0 14px;
+  border: none;
+  color: hsl(45, 100%, 72%);
+  font-size: 12px;
+  cursor: pointer;
+  width: 150px;
+  padding: 8px;
+  display: none;
+  z-index: 1;
+  transition: font-size 0.5s;
+  background: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50% );;
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.125);
 }
+
+.aside__moreInfoBtn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: hsl(240, 2%, 13%);
+  z-index: -1;
+}
+
+.aside__moreInfoBtn:hover {
+  font-size: 14px;
+  transition: font-size 0.5s;
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .aside__moreInfoBtn {
+    display: block;
+  }}
+
 
 .separator {
   height: 1px;
@@ -64,13 +112,21 @@
   width: 45px;
   height: 45px;
   border-radius: 12px;
-  background: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 25%) 0%,
-    hsla(0, 0%, 25%, 0) 50%
-  );
+  background: linear-gradient(to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%);
   box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
   z-index: 1;
+}
+
+.aside__contactIcon--last {
+  width: 72px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .aside__contactIcon--last {
+    width: 45px;
+  }
 }
 
 .aside__contactIcon::before {
@@ -112,15 +168,15 @@
 .aside__socialIconsList {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
+  margin-bottom:25px;
 }
 
-.aside__socialIconsItem {
-}
+.aside__socialIconsItem {}
 
 .aside__socialLink {
   text-decoration: none;
