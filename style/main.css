@@ -19,15 +19,12 @@ body {
 }
 
 .main {
-  margin-top: 25px;
+  margin: 50px 0;
   display: flex;
   flex-direction: row;
   gap: 25px;
   justify-content: center;
-  height: calc(100vh - 50px);
 }
-
-
 
 @media only screen and (max-width: 1100px) {
   .main {
@@ -49,6 +46,9 @@ body {
   background-color: #1e1e1f;
   border: 1px solid var(--border);
   border-radius: 15px;
+  height: 100%;
+  position: sticky;
+  top: 0px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -70,9 +70,9 @@ body {
 }
 
 .main-content {
-  width: 750px;
+  width: 50%;
   box-shadow: 0 24px 80px #00000040;
-  height: 100%;
+  height: 1000px;
   background-color: #1e1e1f;
   border: 1px solid var(--border);
   border-radius: 15px;
