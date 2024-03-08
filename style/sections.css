@@ -1,0 +1,16 @@
+.article-title {
+  font-size: 32px;
+  margin: 20px;
+  margin-top: 30px;
+  color: hsl(0, 0%, 98%);
+  padding-bottom: 15px;
+  border-bottom: 3px solid #ffdb70;
+  border-radius: 2px;
+}
+
+.about-text {
+  margin: 20px;
+  color: hsl(0, 0%, 84%);
+  line-height: 1.5;
+  font-weight: 300;
+}
