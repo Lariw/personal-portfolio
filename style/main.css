@@ -76,7 +76,6 @@ body {
 .main-content {
   width: 60%;
   box-shadow: 0 24px 80px #00000040;
-  height: 1000px;
   background-color: #1e1e1f;
   border: 1px solid var(--border);
   border-radius: 15px;
