@@ -1,10 +1,11 @@
 .nav {
     position: absolute;
-    right:0px;
+    right: 0px;
     border-radius: 0px 15px;
-    background: #2b2b2cbf;
+    background: hsla(240, 1%, 17%, 0.731);
     border: 1px solid #383838;
     padding: 0 20px;
+    backdrop-filter: blur(10px);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -14,27 +15,26 @@
         left: 0;
         width: 100%;
         display: flex;
-        justify-content: center ;
+        justify-content: center;
         padding: 5px 10px;
         border-radius: unset;
+        z-index: 2;
     }
-  }
-
-
+}
 
 .nav__list {
     display: flex;
     list-style: none;
     gap: 15px;
     padding: 0 20px;
-    margin:0;
+    margin: 0;
 }
 
 @media only screen and (max-width: 500px) {
     .nav__list {
-        gap:2px;
+        gap: 2px;
     }
-  }
+}
 
 .nav__hreflink {
     padding: 15px 8px;
@@ -50,7 +50,7 @@
     .nav__hreflink {
         font-size: 12px;
     }
-  }
+}
 
 .nav__hreflink:hover {
     color: #a3a3a3;
@@ -58,5 +58,5 @@
 }
 
 .nav__hreflink--active {
-    color:#ffdb70;
+    color: #ffdb70;
 }
