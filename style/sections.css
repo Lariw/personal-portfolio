@@ -369,3 +369,27 @@ time {
   transition: 0.25s ease;
   font-size: 25px;
 }
+
+/* timeline */
+
+.timeline {
+  margin-bottom: 65px;
+}
+
+.timeline__titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-direction: row;
+}
+
+.timeline__title {
+  text-transform: capitalize;
+  color: hsl(0, 0%, 98%);
+}
+
+.timeline__educationIcon {
+  width: 20px;
+
+}
