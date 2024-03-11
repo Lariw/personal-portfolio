@@ -105,3 +105,134 @@
 .myjob_serviceImage {
   width: 40px;
 }
+
+article {
+  display: none;
+}
+
+.about.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+.resume.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+.portfolio.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+.blog.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+.contact.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+/* contact from section */
+
+.contactForm__title {
+  color: hsl(0, 0%, 98%);
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contactForm {
+  padding: 0px 25px;
+}
+
+.input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.form-input {
+  color: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 20px;
+  border: 1px solid hsl(0, 0%, 22%);
+  border-radius: 14px;
+  outline: none;
+}
+
+.form__textarea {
+  color: hsl(0, 0%, 98%);
+  min-height: 150px;
+  max-height: 300px;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid hsl(0, 0%, 22%);
+  border-radius: 14px;
+  outline: none;
+  padding: 15px 20px;
+  width: 100%;
+  resize: vertical;
+  background: none;
+  margin-bottom: 25px;
+}
+
+.form-btn {
+  position: relative;
+  width: max-content;
+  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  color: hsl(45, 100%, 72%);
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 90px;
+  ;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: 12px;
+  text-transform: capitalize;
+  box-shadow: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+  z-index: 1;
+  transition: 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-btn {
+    width: 100%;
+  }
+}
+
+.form-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  border-radius: inherit;
+  z-index: -1;
+  transition: 0.25s ease;
+}
+
+.form-btn:hover {
+  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsl(45, 100%, 72%));
+}
+
+.contactForm__img {
+  width: 25px;
+}

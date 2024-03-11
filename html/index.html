@@ -1,184 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamil Hajduła - Personal Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../assets/laptop.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamil Hajduła - Personal Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="../assets/laptop.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/aside.css" />
-    <link rel="stylesheet" href="../style/nav.css" />
-    <link rel="stylesheet" href="../style/sections.css" />
-    <script defer src="../script/more-info.js"></script>
-    <script defer src="../script/navigation-bar.js"></script>
-  </head>
-  <body>
-    <main class="main">
-      <aside class="aside">
-        <div class="aside__info">
-          <div class="aside__avatar">
-            <img class="aside__avatarImg" src="../assets/lariw.webp" alt="" />
-          </div>
-          <div class="aside__content">
-            <h1 class="aside__heading">Kamil Hajduła</h1>
-            <span class="aside__position">QA Automation Tester</span>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
 
-          <button class="aside__moreInfoBtn js-menuRoll">
-            <span class="moreInfo--desktop">More info</span>
-            <span
-              ><img
-                class="moreInfo--mobile"
-                src="../assets/arrow-down.svg"
-                alt=""
-            /></span>
-          </button>
+  <link rel="stylesheet" href="../style/main.css" />
+  <link rel="stylesheet" href="../style/aside.css" />
+  <link rel="stylesheet" href="../style/nav.css" />
+  <link rel="stylesheet" href="../style/sections.css" />
+  <script defer src="../script/more-info.js"></script>
+  <script defer src="../script/navigation-bar.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <aside class="aside">
+      <div class="aside__info">
+        <div class="aside__avatar">
+          <img class="aside__avatarImg" src="../assets/lariw.webp" alt="" />
         </div>
-        <div class="aside__moreInfo">
-          <div class="separator"></div>
-          <ul class="aside__contactList">
-            <li class="aside__contactListItem">
-              <div class="aside__contactIcon">
-                <img
-                  class="aside__icon"
-                  src="../assets/email-icon.svg"
-                  alt="Email icon"
-                />
-              </div>
-              <div class="aside__contactInfo">
-                <span class="aside__contactTitle">email</span>
-                <a
-                  href="mailto:kamilhajdula@hotmail.com"
-                  class="aside__contactContent"
-                  >kamilhajdula@hotmail.com</a
-                >
-              </div>
-            </li>
-            <li class="aside__contactListItem">
-              <div class="aside__contactIcon">
-                <img
-                  class="aside__icon"
-                  src="../assets/cell-phone-icon.svg"
-                  alt="Phone icon"
-                />
-              </div>
-              <div class="aside__contactInfo">
-                <span class="aside__contactTitle">phone</span>
-                <a href="tel:+48882342497" class="aside__contactContent"
-                  >+48 882 342 497</a
-                >
-              </div>
-            </li>
-            <li class="aside__contactListItem">
-              <div class="aside__contactIcon">
-                <img
-                  class="aside__icon"
-                  src="../assets/calendar-icon.svg"
-                  alt="Calendar icon"
-                />
-              </div>
-              <div class="aside__contactInfo">
-                <span class="aside__contactTitle">birthday</span>
-                <div class="aside__contactContent">April 26, 2001</div>
-              </div>
-            </li>
-            <li class="aside__contactListItem">
-              <div class="aside__contactIcon aside__contactIcon--last">
-                <img
-                  class="aside__icon"
-                  src="../assets/location-pin-icon.svg"
-                  alt="Location icon"
-                />
-              </div>
-              <div class="aside__contactInfo">
-                <span class="aside__contactTitle">location</span>
-                <div
-                  class="aside__contactContent aside__contactContent--location"
-                >
-                  Olkusz, Lesser Poland Voivodeship, Poland
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="aside__socialIconsList">
-            <li class="aside__socialIconsItem">
-              <a
-                target="_blank"
-                class="aside__socialLink"
-                href="https://www.facebook.com/"
-                ><img
-                  class="aside__socialIcon"
-                  src="../assets/facebook.svg"
-                  alt="Facebook icon"
-              /></a>
-            </li>
-            <li class="aside__socialIconsItem">
-              <a
-                target="_blank"
-                class="aside__socialLink"
-                href="https://twitter.com/"
-                ><img
-                  class="aside__socialIcon"
-                  src="../assets/twitter.svg"
-                  alt="Twitter icon"
-              /></a>
-            </li>
-            <li class="aside__socialIconsItem">
-              <a
-                target="_blank"
-                class="aside__socialLink"
-                href="https://www.instagram.com/"
-                ><img
-                  class="aside__socialIcon"
-                  src="../assets/instagram.svg"
-                  alt="Instagram icon"
-              /></a>
-            </li>
-          </ul>
+        <div class="aside__content">
+          <h1 class="aside__heading">Kamil Hajduła</h1>
+          <span class="aside__position">QA Automation Tester</span>
         </div>
-      </aside>
-      <div class="main-content">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__itemList">
-              <button class="nav__hreflink nav__hreflink--active">About</button>
-            </li>
-            <li class="nav__itemList">
-              <button class="nav__hreflink">Resume</button>
-            </li>
-            <li class="nav__itemList">
-              <button class="nav__hreflink">Portfolio</button>
-            </li>
-            <li class="nav__itemList">
-              <button class="nav__hreflink">Blog</button>
-            </li>
-            <li class="nav__itemList">
-              <button class="nav__hreflink">Contact</button>
-            </li>
-          </ul>
-        </nav>
 
-        <article class="about">
-          <h2 class="article-title">about me</h2>
-        </article>
+        <button class="aside__moreInfoBtn js-menuRoll">
+          <span class="moreInfo--desktop">More info</span>
+          <span><img class="moreInfo--mobile" src="../assets/arrow-down.svg" alt="" /></span>
+        </button>
+      </div>
+      <div class="aside__moreInfo">
+        <div class="separator"></div>
+        <ul class="aside__contactList">
+          <li class="aside__contactListItem">
+            <div class="aside__contactIcon">
+              <img class="aside__icon" src="../assets/email-icon.svg" alt="Email icon" />
+            </div>
+            <div class="aside__contactInfo">
+              <span class="aside__contactTitle">email</span>
+              <a href="mailto:kamilhajdula@hotmail.com" class="aside__contactContent">kamilhajdula@hotmail.com</a>
+            </div>
+          </li>
+          <li class="aside__contactListItem">
+            <div class="aside__contactIcon">
+              <img class="aside__icon" src="../assets/cell-phone-icon.svg" alt="Phone icon" />
+            </div>
+            <div class="aside__contactInfo">
+              <span class="aside__contactTitle">phone</span>
+              <a href="tel:+48882342497" class="aside__contactContent">+48 882 342 497</a>
+            </div>
+          </li>
+          <li class="aside__contactListItem">
+            <div class="aside__contactIcon">
+              <img class="aside__icon" src="../assets/calendar-icon.svg" alt="Calendar icon" />
+            </div>
+            <div class="aside__contactInfo">
+              <span class="aside__contactTitle">birthday</span>
+              <div class="aside__contactContent">April 26, 2001</div>
+            </div>
+          </li>
+          <li class="aside__contactListItem">
+            <div class="aside__contactIcon aside__contactIcon--last">
+              <img class="aside__icon" src="../assets/location-pin-icon.svg" alt="Location icon" />
+            </div>
+            <div class="aside__contactInfo">
+              <span class="aside__contactTitle">location</span>
+              <div class="aside__contactContent aside__contactContent--location">
+                Olkusz, Lesser Poland Voivodeship, Poland
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="aside__socialIconsList">
+          <li class="aside__socialIconsItem">
+            <a target="_blank" class="aside__socialLink" href="https://www.facebook.com/"><img class="aside__socialIcon"
+                src="../assets/facebook.svg" alt="Facebook icon" /></a>
+          </li>
+          <li class="aside__socialIconsItem">
+            <a target="_blank" class="aside__socialLink" href="https://twitter.com/"><img class="aside__socialIcon"
+                src="../assets/twitter.svg" alt="Twitter icon" /></a>
+          </li>
+          <li class="aside__socialIconsItem">
+            <a target="_blank" class="aside__socialLink" href="https://www.instagram.com/"><img
+                class="aside__socialIcon" src="../assets/instagram.svg" alt="Instagram icon" /></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="main-content">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__itemList">
+            <button class="nav__hreflink nav__hreflink--active">About</button>
+          </li>
+          <li class="nav__itemList">
+            <button class="nav__hreflink">Resume</button>
+          </li>
+          <li class="nav__itemList">
+            <button class="nav__hreflink">Portfolio</button>
+          </li>
+          <li class="nav__itemList">
+            <button class="nav__hreflink">Blog</button>
+          </li>
+          <li class="nav__itemList">
+            <button class="nav__hreflink">Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active">
+        <h2 class="article-title">about me</h2>
+
 
         <section class="about-text">
           <p>
@@ -212,7 +159,8 @@
               </div>
               <div class="myjob__serviceContent">
                 <h4 class="myjob__serviceTitle">Lorem ipsum 1</h4>
-                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus recusandae aliquam enim facilis</p>
+                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus
+                  recusandae aliquam enim facilis</p>
               </div>
             </li>
             <li class="myjob__serviceList-item">
@@ -221,7 +169,8 @@
               </div>
               <div class="myjob__serviceContent">
                 <h4 class="myjob__serviceTitle">Lorem ipsum 2</h4>
-                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus recusandae aliquam enim facilis</p>
+                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus
+                  recusandae aliquam enim facilis</p>
               </div>
             </li>
             <li class="myjob__serviceList-item">
@@ -230,7 +179,8 @@
               </div>
               <div class="myjob__serviceContent">
                 <h4 class="myjob__serviceTitle">Lorem ipsum 3</h4>
-                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus recusandae aliquam enim facilis</p>
+                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus
+                  recusandae aliquam enim facilis</p>
               </div>
             </li>
             <li class="myjob__serviceList-item">
@@ -239,12 +189,57 @@
               </div>
               <div class="myjob__serviceContent">
                 <h4 class="myjob__serviceTitle">Lorem ipsum 4</h4>
-                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus recusandae aliquam enim facilis</p>
+                <p class="myjob__serviceText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, minus
+                  recusandae aliquam enim facilis</p>
               </div>
             </li>
           </ul>
         </section>
-      </div>
-    </main>
-  </body>
+
+      </article>
+      <article class="resume">
+
+        <h2 class="article-title">resume</h2>
+
+      </article>
+      <article class="portfolio">
+
+        <h2 class="article-title">portfolio</h2>
+
+      </article>
+      <article class="blog">
+
+        <h2 class="article-title">blog</h2>
+      </article>
+      <article class="contact">
+        <h2 class="article-title">contact</h2>
+
+        <section class="contactForm">
+
+          <h3 class="contactForm__title">contact form</h3>
+
+          <form>
+
+            <div class="input-wrapper">
+            <input class="form-input" type="text" placeholder="Full name">
+            <input class="form-input" type="email" name="" id="" placeholder="Email address">
+
+          </div>
+
+          <textarea name="message" class="form__textarea" placeholder="Your Message"></textarea>
+          <button type="submit" class="form-btn"><img class="contactForm__img" src="../assets/send-icon.svg" alt=""><span>send message</span></button>
+
+
+          </form>
+
+
+
+        </section>
+
+
+      </article>
+    </div>
+  </main>
+</body>
+
 </html>
