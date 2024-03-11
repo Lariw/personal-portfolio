@@ -370,7 +370,11 @@ time {
   font-size: 25px;
 }
 
-/* timeline */
+/* resume */
+
+.resume {
+  margin: 0 25px 65px;
+}
 
 .timeline {
   margin-bottom: 65px;
@@ -387,9 +391,81 @@ time {
 .timeline__title {
   text-transform: capitalize;
   color: hsl(0, 0%, 98%);
+  font-size: 25px;;
+}
+
+.timeline__titleIcon {
+  position: relative;
+  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow:-4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  z-index: 1;
+}
+
+.timeline__titleIcon::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background:  hsl(240, 2%, 13%);
+  border-radius: inherit;
+  z-index: -1;
 }
 
 .timeline__educationIcon {
-  width: 20px;
+  width: 30px;
 
+}
+
+.timeline__listItem {
+  list-style: none;
+  position: relative;
+  color: hsl(0, 0%, 98%);
+}
+
+.timeline__listItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+.timeline__listItem:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -18px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: hsl(0, 0%, 22%);
+}
+
+.timeline__itemTitle {
+  line-height: 1.6;
+  margin-bottom: 9px;
+}
+
+.timeline__text {
+  display: block;
+  color:hsl(0, 0%, 84%);
+
+}
+
+.timeline__text::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -21px;
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+
+.timeline__date {
+  color: #ffdb70;
 }
