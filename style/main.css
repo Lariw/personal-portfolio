@@ -100,7 +100,8 @@ body {
   }
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
   width: 100%;
   background: none;

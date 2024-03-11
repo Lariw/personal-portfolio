@@ -66,7 +66,7 @@
   width: 100%;
   background-size: cover;
   border-radius: 8px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
 .aside__content {
@@ -184,7 +184,7 @@
 
 @media only screen and (max-width: 500px) {
   .aside__moreInfoBtn {
-    width:40px;
+    width: 40px;
     display: block;
     padding: 2px;
     align-self: center;
@@ -336,4 +336,8 @@
 
 .aside__socialIcon {
   width: 15px;
+}
+
+.aside__socialIcon--linkedin {
+  width: 18px;
 }
