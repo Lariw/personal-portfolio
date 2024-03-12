@@ -52,6 +52,15 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .myjob__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+}
+
 .myjob__serviceList-item {
   position: relative;
   background: linear-gradient(
@@ -387,6 +396,12 @@ time {
   margin: 0 25px 65px;
 }
 
+@media only screen and (max-width: 500px) {
+  .resume {
+    margin: 0 5px 65px;
+  }
+}
+
 .timeline {
   margin-bottom: 65px;
 }
@@ -484,6 +499,7 @@ time {
 
 .skills__title {
   font-size: 25px;
+  margin-left:20px;
   text-transform: capitalize;
   color: hsl(0, 0%, 98%);
 }
