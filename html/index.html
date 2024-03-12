@@ -1,418 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamil Hajduła - QA Automation Tester</title>
+    <link rel="icon" type="image/x-icon" href="../assets/laptop.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kamil Hajduła - QA Automation Tester</title>
-  <link rel="icon" type="image/x-icon" href="../assets/laptop.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/aside.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/sections.css" />
+    <script defer src="../script/more-info.js"></script>
+    <script defer src="../script/navigation-bar.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="../style/main.css" />
-  <link rel="stylesheet" href="../style/aside.css" />
-  <link rel="stylesheet" href="../style/nav.css" />
-  <link rel="stylesheet" href="../style/sections.css" />
-  <script defer src="../script/more-info.js"></script>
-  <script defer src="../script/navigation-bar.js"></script>
-</head>
+  <body>
+    <main class="main">
+      <aside class="aside">
+        <div class="aside__info">
+          <div class="aside__avatar">
+            <img class="aside__avatarImg" src="../assets/lariw.webp" alt="" />
+          </div>
+          <div class="aside__content">
+            <h1 class="aside__heading">Kamil Hajduła</h1>
+            <span class="aside__position">QA Automation Tester</span>
+          </div>
 
-<body>
-  <main class="main">
-    <aside class="aside">
-      <div class="aside__info">
-        <div class="aside__avatar">
-          <img class="aside__avatarImg" src="../assets/lariw.webp" alt="" />
+          <button class="aside__moreInfoBtn js-menuRoll">
+            <span class="moreInfo--desktop">More info</span>
+            <span
+              ><img
+                class="moreInfo--mobile"
+                src="../assets/arrow-down.svg"
+                alt=""
+            /></span>
+          </button>
         </div>
-        <div class="aside__content">
-          <h1 class="aside__heading">Kamil Hajduła</h1>
-          <span class="aside__position">QA Automation Tester</span>
-        </div>
-
-        <button class="aside__moreInfoBtn js-menuRoll">
-          <span class="moreInfo--desktop">More info</span>
-          <span><img class="moreInfo--mobile" src="../assets/arrow-down.svg" alt="" /></span>
-        </button>
-      </div>
-      <div class="aside__moreInfo">
-        <div class="separator"></div>
-        <ul class="aside__contactList">
-          <li class="aside__contactListItem">
-            <div class="aside__contactIcon">
-              <img class="aside__icon" src="../assets/email-icon.svg" alt="Email icon" />
-            </div>
-            <div class="aside__contactInfo">
-              <span class="aside__contactTitle">email</span>
-              <a href="mailto:kamilhajdula@hotmail.com" class="aside__contactContent">kamilhajdula@hotmail.com</a>
-            </div>
-          </li>
-          <li class="aside__contactListItem">
-            <div class="aside__contactIcon">
-              <img class="aside__icon" src="../assets/cell-phone-icon.svg" alt="Phone icon" />
-            </div>
-            <div class="aside__contactInfo">
-              <span class="aside__contactTitle">phone</span>
-              <a href="tel:+48882342497" class="aside__contactContent">+48 882 342 497</a>
-            </div>
-          </li>
-          <li class="aside__contactListItem">
-            <div class="aside__contactIcon">
-              <img class="aside__icon" src="../assets/calendar-icon.svg" alt="Calendar icon" />
-            </div>
-            <div class="aside__contactInfo">
-              <span class="aside__contactTitle">birthday</span>
-              <div class="aside__contactContent">April 26, 2001</div>
-            </div>
-          </li>
-          <li class="aside__contactListItem">
-            <div class="aside__contactIcon aside__contactIcon--last">
-              <img class="aside__icon" src="../assets/location-pin-icon.svg" alt="Location icon" />
-            </div>
-            <div class="aside__contactInfo">
-              <span class="aside__contactTitle">location</span>
-              <div class="aside__contactContent aside__contactContent--location">
-                Olkusz, Lesser Poland Voivodeship, Poland
+        <div class="aside__moreInfo">
+          <div class="separator"></div>
+          <ul class="aside__contactList">
+            <li class="aside__contactListItem">
+              <div class="aside__contactIcon">
+                <img
+                  class="aside__icon"
+                  src="../assets/email-icon.svg"
+                  alt="Email icon"
+                />
               </div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="aside__socialIconsList">
-          <li class="aside__socialIconsItem">
-            <a target="_blank" class="aside__socialLink" href="https://www.facebook.com/"><img class="aside__socialIcon"
-                src="../assets/facebook.svg" alt="Facebook icon" /></a>
-          </li>
-          <li class="aside__socialIconsItem">
-            <a target="_blank" class="aside__socialLink" href="https://twitter.com/Lariw01/"><img
-                class="aside__socialIcon" src="../assets/twitter.svg" alt="Twitter icon" /></a>
-          </li>
-          <li class="aside__socialIconsItem">
-            <a target="_blank" class="aside__socialLink" href="https://www.linkedin.com/in/Lariw/"><img
-                class="aside__socialIcon aside__socialIcon--linkedin" src="../assets/linkedin.svg"
-                alt="Linkedin icon" /></a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <div class="main-content">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__itemList">
-            <button class="nav__hreflink nav__hreflink--active">About</button>
-          </li>
-          <li class="nav__itemList">
-            <button class="nav__hreflink">Resume</button>
-          </li>
-          <li class="nav__itemList">
-            <button class="nav__hreflink">Portfolio</button>
-          </li>
-          <li class="nav__itemList">
-            <button class="nav__hreflink">Blog</button>
-          </li>
-          <li class="nav__itemList">
-            <button class="nav__hreflink">Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <article class="about active">
-        <h2 class="article-title">about me</h2>
-
-        <section class="about-text">
-          <p>
-            I am a QA Automation Tester living near Olkusz, Poland. I have experience that enables me to create
-            comprehensive tests for web and PWA applications. I am currently studying computer science, expanding my
-            mind with various interesting IT specializations. I enjoy solving complex problems by designing simple tools
-            or test scenarios, which I later implement in code.
-          </p>
-
-          <p>
-            My job is to create comprehensive tests that can be conducted at the levels of performance, responsiveness,
-            and accessibility. I am familiar with many tools that facilitate manual testing, and I have successfully
-            implemented many of them in my current company.
-          </p>
-        </section>
-
-        <section class="myjob">
-          <h3 class="service-title">what is my job?</h3>
-          <ul class="myjob__list">
-            <li class="myjob__serviceList-item">
-              <div class="myjob__serviceIcon">
-                <img class="myjob_serviceImage" src="../assets/software-developer.svg" alt="" />
-              </div>
-              <div class="myjob__serviceContent">
-                <h4 class="myjob__serviceTitle">Lorem ipsum 1</h4>
-                <p class="myjob__serviceText">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Odio, minus recusandae aliquam enim facilis
-                </p>
+              <div class="aside__contactInfo">
+                <span class="aside__contactTitle">email</span>
+                <a
+                  href="mailto:kamilhajdula@hotmail.com"
+                  class="aside__contactContent"
+                  >kamilhajdula@hotmail.com</a
+                >
               </div>
             </li>
-            <li class="myjob__serviceList-item">
-              <div class="myjob__serviceIcon">
-                <img class="myjob_serviceImage" src="../assets/software-developer.svg" alt="" />
+            <li class="aside__contactListItem">
+              <div class="aside__contactIcon">
+                <img
+                  class="aside__icon"
+                  src="../assets/cell-phone-icon.svg"
+                  alt="Phone icon"
+                />
               </div>
-              <div class="myjob__serviceContent">
-                <h4 class="myjob__serviceTitle">Lorem ipsum 2</h4>
-                <p class="myjob__serviceText">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Odio, minus recusandae aliquam enim facilis
-                </p>
-              </div>
-            </li>
-            <li class="myjob__serviceList-item">
-              <div class="myjob__serviceIcon">
-                <img class="myjob_serviceImage" src="../assets/software-developer.svg" alt="" />
-              </div>
-              <div class="myjob__serviceContent">
-                <h4 class="myjob__serviceTitle">Lorem ipsum 3</h4>
-                <p class="myjob__serviceText">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Odio, minus recusandae aliquam enim facilis
-                </p>
+              <div class="aside__contactInfo">
+                <span class="aside__contactTitle">phone</span>
+                <a href="tel:+48882342497" class="aside__contactContent"
+                  >+48 882 342 497</a
+                >
               </div>
             </li>
-            <li class="myjob__serviceList-item">
-              <div class="myjob__serviceIcon">
-                <img class="myjob_serviceImage" src="../assets/software-developer.svg" alt="" />
+            <li class="aside__contactListItem">
+              <div class="aside__contactIcon">
+                <img
+                  class="aside__icon"
+                  src="../assets/calendar-icon.svg"
+                  alt="Calendar icon"
+                />
               </div>
-              <div class="myjob__serviceContent">
-                <h4 class="myjob__serviceTitle">Lorem ipsum 4</h4>
-                <p class="myjob__serviceText">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Odio, minus recusandae aliquam enim facilis
-                </p>
+              <div class="aside__contactInfo">
+                <span class="aside__contactTitle">birthday</span>
+                <div class="aside__contactContent">April 26, 2001</div>
+              </div>
+            </li>
+            <li class="aside__contactListItem">
+              <div class="aside__contactIcon aside__contactIcon--last">
+                <img
+                  class="aside__icon"
+                  src="../assets/location-pin-icon.svg"
+                  alt="Location icon"
+                />
+              </div>
+              <div class="aside__contactInfo">
+                <span class="aside__contactTitle">location</span>
+                <div
+                  class="aside__contactContent aside__contactContent--location"
+                >
+                  Olkusz, Lesser Poland Voivodeship, Poland
+                </div>
               </div>
             </li>
           </ul>
-        </section>
-      </article>
-      <article class="resume">
-        <h2 class="article-title">resume</h2>
 
-        <section class="timeline">
+          <div class="separator"></div>
 
-          <div class="timeline__titleWrapper">
-            <div class="timeline__titleIcon">
-              <img class="timeline__educationIcon" src="../assets/student.png" alt="">
-            </div>
-            <h3 class="timeline__title">education</h3>
-          </div>
-
-          <ol class="timeline__list">
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">WSB University in Dabrowa Gornicza - Computer Science</h3><span
-                class="timeline__date">2021-2024</span>
-              <p class="timeline__text"> Computer science with a specialization in web and mobile applications.</p>
+          <ul class="aside__socialIconsList">
+            <li class="aside__socialIconsItem">
+              <a
+                target="_blank"
+                class="aside__socialLink"
+                href="https://www.facebook.com/"
+                ><img
+                  class="aside__socialIcon"
+                  src="../assets/facebook.svg"
+                  alt="Facebook icon"
+              /></a>
             </li>
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">Antoni Kocjan Technical High School in Olkusz</h3><span
-                class="timeline__date">2021-2024</span>
-              <p class="timeline__text">Technical school with IT profile</p>
+            <li class="aside__socialIconsItem">
+              <a
+                target="_blank"
+                class="aside__socialLink"
+                href="https://twitter.com/Lariw01/"
+                ><img
+                  class="aside__socialIcon"
+                  src="../assets/twitter.svg"
+                  alt="Twitter icon"
+              /></a>
             </li>
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">Wladyslaw Lokietek Middle School in Zarzecze</h3><span
-                class="timeline__date">2021-2024</span>
-              <p class="timeline__text">Zarzecze Public Grammer School</p>
-            </li>
-          </ol>
-
-
-
-
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="timeline__titleWrapper">
-            <div class="timeline__titleIcon">
-              <img class="timeline__educationIcon" src="../assets/experience.png" alt="">
-            </div>
-            <h3 class="timeline__title">experience</h3>
-          </div>
-
-          <ol class="timeline__list">
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">Gravity Global, QA Automation Tester, London</h3><span
-                class="timeline__date">2021 - now</span>
-              <p class="timeline__text"> As a QA Automation Tester, my responsibilities included writing and maintaining
-                test scripts, creating and improving tools for automated testing, and providing support for manual
-                testers.</p>
-            </li>
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">FIBER, Fiber Optic Network Technician, Wolbrom </h3><span
-                class="timeline__date">2020-2021</span>
-              <p class="timeline__text">Working as a technician taught me a lot about patience, a technical approach to
-                issues related to networks, and first-line customer communication.</p>
-            </li>
-            <li class="timeline__listItem">
-              <h3 class="timeline__itemTitle">Internship - computer service center, Wolbrom</h3><span
-                class="timeline__date">2019-2020</span>
-              <p class="timeline__text">Exploring the IT world from the perspective of building and repairing computer
-                hardware was a very interesting experience.</p>
-            </li>
-          </ol>
-
-
-
-
-
-        </section>
-
-
-
-
-      </article>
-      <article class="portfolio">
-        <h2 class="article-title">portfolio</h2>
-      </article>
-      <article class="blog">
-        <h2 class="article-title">blog</h2>
-
-        <section class="blogPosts">
-          <ul class="blogPosts__list">
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-1</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-1</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-2</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-2</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-3</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-3</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-4</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-4</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-5</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-5</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blogPosts__item">
-              <a class="blogPost__link" href="#">
-                <figure class="blogPosts__figureBox">
-                  <img class="blogPosts__image" loading="lazy" src="../assets/workingImage.jpg" alt="" />
-                </figure>
-                <div class="blogPosts__content">
-                  <div class="blogPosts__metaContainer">
-                    <p class="blogPosts__category">Test-6</p>
-                    <span class="dot"></span><time datetime="2024-03-11">March 11, 2024</time>
-                  </div>
-                  <h3 class="blogPosts__title">Lorem-6</h3>
-                  <p class="blogPosts__text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Explicabo eius, accusantium.
-                  </p>
-                </div>
-              </a>
+            <li class="aside__socialIconsItem">
+              <a
+                target="_blank"
+                class="aside__socialLink"
+                href="https://www.linkedin.com/in/Lariw/"
+                ><img
+                  class="aside__socialIcon aside__socialIcon--linkedin"
+                  src="../assets/linkedin.svg"
+                  alt="Linkedin icon"
+              /></a>
             </li>
           </ul>
-        </section>
-      </article>
-      <article class="contact">
-        <h2 class="article-title">contact</h2>
+        </div>
+      </aside>
+      <div class="main-content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__itemList">
+              <button class="nav__hreflink nav__hreflink--active">About</button>
+            </li>
+            <li class="nav__itemList">
+              <button class="nav__hreflink">Resume</button>
+            </li>
+            <li class="nav__itemList">
+              <button class="nav__hreflink">Portfolio</button>
+            </li>
+            <li class="nav__itemList">
+              <button class="nav__hreflink">Blog</button>
+            </li>
+            <li class="nav__itemList">
+              <button class="nav__hreflink">Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-        <section class="contactForm">
-          <h3 class="contactForm__title">contact form</h3>
+        <article class="about active">
+          <h2 class="article-title">about me</h2>
 
-          <form>
-            <div class="input-wrapper">
-              <input class="form-input" type="text" placeholder="Full name" />
-              <input class="form-input" type="email" name="" id="" placeholder="Email address" />
+          <section class="about-text">
+            <p>
+              I am a QA Automation Tester living near Olkusz, Poland. I have
+              experience that enables me to create comprehensive tests for web
+              and PWA applications. I am currently studying computer science,
+              expanding my mind with various interesting IT specializations. I
+              enjoy solving complex problems by designing simple tools or test
+              scenarios, which I later implement in code.
+            </p>
+
+            <p>
+              My job is to create comprehensive tests that can be conducted at
+              the levels of performance, responsiveness, and accessibility. I am
+              familiar with many tools that facilitate manual testing, and I
+              have successfully implemented many of them in my current company.
+            </p>
+          </section>
+
+          <section class="myjob">
+            <h3 class="service-title">what is my job?</h3>
+            <ul class="myjob__list">
+              <li class="myjob__serviceList-item">
+                <div class="myjob__serviceIcon">
+                  <img
+                    class="myjob_serviceImage"
+                    src="../assets/interface.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="myjob__serviceContent">
+                  <h4 class="myjob__serviceTitle">
+                    User Interface Automation Testing
+                  </h4>
+                  <p class="myjob__serviceText">
+                    Collaborating on the creation and maintenance of automated
+                    test scripts for user interface testing, ensuring effective
+                    and efficient validation of application functionality.
+                  </p>
+                </div>
+              </li>
+              <li class="myjob__serviceList-item">
+                <div class="myjob__serviceIcon">
+                  <img
+                    class="myjob_serviceImage"
+                    src="../assets/api.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="myjob__serviceContent">
+                  <h4 class="myjob__serviceTitle">
+                    API and Integration Testing
+                  </h4>
+                  <p class="myjob__serviceText">
+                    Testing interactions between different system components
+                    through API test scripts, ensuring consistency and
+                    reliability of integrations.
+                  </p>
+                </div>
+              </li>
+              <li class="myjob__serviceList-item">
+                <div class="myjob__serviceIcon">
+                  <img
+                    class="myjob_serviceImage"
+                    src="../assets/performance-graph.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="myjob__serviceContent">
+                  <h4 class="myjob__serviceTitle">Performance Testing</h4>
+                  <p class="myjob__serviceText">
+                    Examining and analyzing application performance through the
+                    creation of test scenarios, monitoring, and reporting
+                    results to ensure an optimal user experience.
+                  </p>
+                </div>
+              </li>
+              <li class="myjob__serviceList-item">
+                <div class="myjob__serviceIcon">
+                  <img
+                    class="myjob_serviceImage"
+                    src="../assets/software-developer.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="myjob__serviceContent">
+                  <h4 class="myjob__serviceTitle">
+                    Implementing Tests in CI/CD Process
+                  </h4>
+                  <p class="myjob__serviceText">
+                    Integrating and managing tests in a continuous deployment
+                    environment, ensuring rapid detection and resolution of
+                    errors during development cycles.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="resume">
+          <h2 class="article-title">resume</h2>
+
+          <section class="timeline">
+            <div class="timeline__titleWrapper">
+              <div class="timeline__titleIcon">
+                <img
+                  class="timeline__educationIcon"
+                  src="../assets/student.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="timeline__title">education</h3>
             </div>
 
-            <textarea name="message" class="form__textarea" placeholder="Your Message"></textarea>
-            <button type="submit" class="form-btn">
-              <img class="contactForm__img" src="../assets/send-icon.svg" alt="" /><span>send message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
-</body>
+            <ol class="timeline__list">
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  WSB University in Dabrowa Gornicza - Computer Science
+                </h3>
+                <span class="timeline__date">2021 - 2024</span>
+                <p class="timeline__text">
+                  Computer science with a specialization in web and mobile
+                  applications.
+                </p>
+              </li>
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  Antoni Kocjan Technical High School in Olkusz
+                </h3>
+                <span class="timeline__date">2017 - 2021</span>
+                <p class="timeline__text">Technical school with IT profile</p>
+              </li>
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  Wladyslaw Lokietek Middle School in Zarzecze
+                </h3>
+                <span class="timeline__date">2014 - 2017</span>
+                <p class="timeline__text">Zarzecze Public Grammer School</p>
+              </li>
+            </ol>
+          </section>
 
+          <section class="timeline">
+            <div class="timeline__titleWrapper">
+              <div class="timeline__titleIcon">
+                <img
+                  class="timeline__educationIcon"
+                  src="../assets/experience.png"
+                  alt=""
+                />
+              </div>
+              <h3 class="timeline__title">experience</h3>
+            </div>
+
+            <ol class="timeline__list">
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  Gravity Global, QA Automation Tester, London
+                </h3>
+                <span class="timeline__date">2022 - now</span>
+                <p class="timeline__text">
+                  As a QA Automation Tester, my responsibilities included
+                  writing and maintaining test scripts, creating and improving
+                  tools for automated testing, and providing support for manual
+                  testers.
+                </p>
+              </li>
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  FIBER, Fiber Optic Network Technician, Wolbrom
+                </h3>
+                <span class="timeline__date">2021 - 2022</span>
+                <p class="timeline__text">
+                  Working as a technician taught me a lot about patience, a
+                  technical approach to issues related to networks, and
+                  first-line customer communication.
+                </p>
+              </li>
+              <li class="timeline__listItem">
+                <h3 class="timeline__itemTitle">
+                  Internship - computer service center, Wolbrom
+                </h3>
+                <span class="timeline__date">2019 - 2020</span>
+                <p class="timeline__text">
+                  Exploring the IT world from the perspective of building and
+                  repairing computer hardware was a very interesting experience.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+        <article class="portfolio">
+          <h2 class="article-title">portfolio</h2>
+        </article>
+        <article class="blog">
+          <h2 class="article-title">blog</h2>
+
+          <section class="blogPosts">
+            <ul class="blogPosts__list">
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-1</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-1</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-2</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-2</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-3</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-3</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-4</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-4</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-5</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-5</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blogPosts__item">
+                <a class="blogPost__link" href="#">
+                  <figure class="blogPosts__figureBox">
+                    <img
+                      class="blogPosts__image"
+                      loading="lazy"
+                      src="../assets/workingImage.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="blogPosts__content">
+                    <div class="blogPosts__metaContainer">
+                      <p class="blogPosts__category">Test-6</p>
+                      <span class="dot"></span
+                      ><time datetime="2024-03-11">March 11, 2024</time>
+                    </div>
+                    <h3 class="blogPosts__title">Lorem-6</h3>
+                    <p class="blogPosts__text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Explicabo eius, accusantium.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="contact">
+          <h2 class="article-title">contact</h2>
+
+          <section class="contactForm">
+            <h3 class="contactForm__title">contact form</h3>
+
+            <form>
+              <div class="input-wrapper">
+                <input class="form-input" type="text" placeholder="Full name" />
+                <input
+                  class="form-input"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email address"
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form__textarea"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="form-btn">
+                <img
+                  class="contactForm__img"
+                  src="../assets/send-icon.svg"
+                  alt=""
+                /><span>send message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>
