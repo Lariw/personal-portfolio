@@ -446,6 +446,7 @@ time {
 .timeline__itemTitle {
   line-height: 1.6;
   margin-bottom: 9px;
+  font-size: 15px;
 }
 
 .timeline__text {
