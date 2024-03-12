@@ -270,6 +270,12 @@ article {
   }
 }
 
+.blogPosts__text {
+  color: hsla(0, 0%, 84%, 0.7);
+  font-size: 15px;
+  margin-left: 12px;
+}
+
 .blogPosts__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
