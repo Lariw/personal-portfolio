@@ -20,6 +20,11 @@
   font-weight: 300;
 }
 
+.myjob__serviceText {
+  color: hsl(0, 0%, 84%);
+  font-weight: 300;
+}
+
 .service-title {
   text-transform: capitalize;
   font-size: 25px;
