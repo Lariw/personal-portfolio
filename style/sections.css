@@ -135,27 +135,22 @@ article {
 
 .about.active {
   display: block;
-  animation: fade 0.5s ease backwards;
 }
 
 .resume.active {
   display: block;
-  animation: fade 0.5s ease backwards;
 }
 
 .portfolio.active {
   display: block;
-  animation: fade 0.5s ease backwards;
 }
 
 .blog.active {
   display: block;
-  animation: fade 0.5s ease backwards;
 }
 
 .contact.active {
   display: block;
-  animation: fade 0.5s ease backwards;
 }
 
 /* contact from section */

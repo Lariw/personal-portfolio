@@ -121,3 +121,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #202020;
   outline: 5px solid #1e1e1f;
 }
+
+article.active {
+  animation: fade 0.5s ease backwards;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
