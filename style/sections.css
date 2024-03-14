@@ -417,12 +417,16 @@ time {
 .timeline__title {
   text-transform: capitalize;
   color: hsl(0, 0%, 98%);
-  font-size: 25px;;
+  font-size: 25px;
 }
 
 .timeline__titleIcon {
   position: relative;
-  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
   width: 50px;
   height: 50px;
   border-radius: 8px;
@@ -430,7 +434,7 @@ time {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  box-shadow:-4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   z-index: 1;
 }
 
@@ -438,14 +442,13 @@ time {
   content: "";
   position: absolute;
   inset: 1px;
-  background:  hsl(240, 2%, 13%);
+  background: hsl(240, 2%, 13%);
   border-radius: inherit;
   z-index: -1;
 }
 
 .timeline__educationIcon {
   width: 30px;
-
 }
 
 .timeline__listItem {
@@ -457,7 +460,6 @@ time {
 .timeline__listItem:not(:last-child) {
   margin-bottom: 20px;
 }
-
 
 .timeline__listItem:not(:last-child)::before {
   content: "";
@@ -477,8 +479,7 @@ time {
 
 .timeline__text {
   display: block;
-  color:hsl(0, 0%, 84%);
-
+  color: hsl(0, 0%, 84%);
 }
 
 .timeline__text::after {
@@ -499,7 +500,7 @@ time {
 
 .skills__title {
   font-size: 25px;
-  margin-left:20px;
+  margin-left: 20px;
   text-transform: capitalize;
   color: hsl(0, 0%, 98%);
 }
@@ -507,13 +508,17 @@ time {
 .skills__list {
   list-style: none;
   color: #fff;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .content-card {
   position: relative;
-  background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
   padding: 15px;
   padding-top: 45px;
   border-radius: 14px;
@@ -526,7 +531,12 @@ time {
   content: "";
   position: absolute;
   inset: 1px;
-  background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  background: linear-gradient(
+      to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
   border-radius: inherit;
   z-index: -1;
 }
@@ -539,8 +549,8 @@ time {
 .skills__h5-titleWrapper {
   display: flex;
   align-items: center;
-  gap:15px;
-  margin-bottom: 5px;;
+  gap: 15px;
+  margin-bottom: 5px;
 }
 
 .skills__h5-titleWrapper > data {
@@ -548,16 +558,16 @@ time {
 }
 
 .skills__h5-title {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .skills__progressBar {
   display: block;
-  background: hsl(0, 0%, 22%);;
-  width:100%;
-  height:10px;
-  border-radius: 8px;;
+  background: hsl(0, 0%, 22%);
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
 }
 
 .skills__progressFill {
@@ -565,5 +575,99 @@ time {
   background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
   width: 50%;
   border-radius: inherit;
-  height:100%;
+  height: 100%;
+}
+
+/* portfolio */
+
+.portfolio {
+  margin-bottom: 65px;
+  width: 100%;
+}
+
+.portfolioProjects {
+  display: block;
+}
+
+.portfolio__list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .portfolio__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px;
+  }
+}
+
+.portfolio__listItem {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
+.portfolio__link {
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.portfolio__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+  transition: 0.25s ease;
+}
+
+.portfolio__itemIcon {
+  --scale: 0.8;
+  background: hsl(0, 0%, 22%);
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.25s ease;
+}
+
+.portfolio__image-in {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio__title {
+  padding: 0;
+  margin-left: 20px;
+  color: hsl(0, 0%, 98%);
+  font-size: 13px;
+}
+
+.portfolio__category {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  color: hsla(0, 0%, 84%, 0.7);
+  font-size: 12px;
 }
