@@ -613,6 +613,7 @@ time {
 }
 
 .portfolio__image {
+  height:200px;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
