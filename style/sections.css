@@ -600,9 +600,21 @@ time {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .portfolio__list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .portfolio__listItem {
   display: block;
   animation: scaleUp 0.25s ease forwards;
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio__listItem {
+    margin-bottom: 25px;
+  }
 }
 
 .portfolio__link {
@@ -613,7 +625,7 @@ time {
 }
 
 .portfolio__image {
-  height:200px;
+  height: 200px;
   position: relative;
   border-radius: 16px;
   overflow: hidden;
