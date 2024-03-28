@@ -34,6 +34,18 @@
     <link rel="stylesheet" href="../style/sections.css" />
     <script defer src="../script/more-info.js"></script>
     <script defer src="../script/navigation-bar.js"></script>
+    <script defer src="../script/form-emailSender.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "1XfxuN4RvSm84YOwq",
+        });
+      })();
+    </script>
   </head>
 
   <body>
@@ -729,19 +741,17 @@
 
             <form>
               <div class="input-wrapper">
-                <input class="form-input" type="text" placeholder="Full name" />
+                <input class="js-fullName form-input" type="text" placeholder="Full name" />
                 <input
-                  class="form-input"
+                  class="form-input js-email"
                   type="email"
-                  name=""
-                  id=""
                   placeholder="Email address"
                 />
               </div>
 
               <textarea
                 name="message"
-                class="form__textarea"
+                class="form__textarea js-message"
                 placeholder="Your Message"
               ></textarea>
               <button type="submit" class="form-btn">
@@ -749,7 +759,7 @@
                   class="contactForm__img"
                   src="../assets/send-icon.svg"
                   alt=""
-                /><span>send message</span>
+                /><span class="js-submitBtnContent">send message</span>
               </button>
             </form>
           </section>

@@ -9,9 +9,6 @@
       });
 
       const sectionName = btn.innerHTML.toLowerCase();
-
-      console.log(sectionName);
-
       articles.forEach((article) => {
         article.classList.remove("active");
       });
