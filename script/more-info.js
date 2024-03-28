@@ -1,7 +1,1 @@
-(() => {
-  const moreInfoBtn = document.querySelector(".js-menuRoll");
-  const moreInfoContainer = document.querySelector(".aside__moreInfo");
-  moreInfoBtn.addEventListener("click", () => {
-    moreInfoContainer.classList.toggle("aside__moreInfo--active");
-  });
-})();
+(()=>{let e=document.querySelector(".js-menuRoll"),l=document.querySelector(".aside__moreInfo");e.addEventListener("click",()=>{l.classList.toggle("aside__moreInfo--active")})})();
